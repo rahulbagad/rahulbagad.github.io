@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+      <title>Personal Portfolio</title>
+      <!-- CSS  -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link href="css/main.css" type="text/css" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Kumar+One" rel="stylesheet">
+      <script>
+         $(document).ready(function(){
+           $("a").on('click', function(event) {
+
+             if (this.hash !== "") {
+               event.preventDefault();
+
+               var hash = this.hash;
+               $('html, body').animate({
+                 scrollTop: $(hash).offset().top
+               }, 800, function(){
+                 window.location.hash = hash;
+               });
+             }
+           });
+         });
+
+         jQuery(function ($) {
+             $('#prof').hover(function () {
+                 $(this).attr('src', function (i, src) {
+                     return src.replace('http://puzzlepedia.esy.es/puzzlepediaprofile.jpg', 'http://puzzlepedia.esy.es/img/profile/1482676466.jpg')
+                 })
+             }, function () {
+                 $(this).attr('src', function (i, src) {
+                     return src.replace('http://puzzlepedia.esy.es/img/profile/1482676466.jpg', 'http://puzzlepedia.esy.es/puzzlepediaprofile.jpg')
+                 })
+             })
+         })
+
+          $(document).ready(function(){
+              $("#puzz").click(function(){
+                  $("#p").fadeToggle(1000);
+              });
+          });
+
+          $(document).ready(function(){
+              $("#gas").click(function(){
+                  $("#g").fadeToggle(1000);
+              });
+          });
+          $(document).ready(function(){
+              $("#edu").click(function(){
+                  $("#e").fadeToggle(1000);
+              });
+          });
+          $(document).ready(function(){
+              $("#quiz").click(function(){
+                  $("#q").fadeToggle(1000);
+              });
+          });
+          $(document).ready(function(){
+				$(".landing").css("min-height", $( window ).height());
+				$(".container").css("margin-top", $( window ).height()/25);
+			
+            });
+            $(document).ready(function(){
+        			$('.modal').modal();
+  			});
+      </script>
+      <style>
+         .parallax-container {
+	         position: relative;
+	         background-attachment: fixed;
+	         background-position: center;
+	         background-repeat: no-repeat;
+	         background-size: cover;
+	         height: auto;
+         }
+         h2 {
+	         font-family: "Roboto", "Arial";
+	         font-weight: 100;
+	         font-size: 35px;
+         }
+         h3 {
+	         font-family: "Roboto", "Arial";
+	         font-weight: 300;
+	         font-size: 17px;
+	         line-height: 25px;
+	         padding-top: 10px;
+         }
+
+         hr{
+             height: 30px;
+             border-style: solid;
+             border-color: black;
+             border-width: 1px 0 0 0;
+             border-radius: 20px;
+         }
+         hr {
+             display: block;
+             content: "";
+             height: 30px;
+             margin-top: -31px;
+             border-style: solid;
+             border-color: black;
+             border-width: 0 0 1px 0;
+             border-radius: 20px;
+         }
+         .landing{
+            min-height: 640px;
+            height: auto;
+            color: rgba(255,255,255,.9);
+            min-width: 100%;
+          }
+          .container{
+          	margin-top:70px;
+          }
+      </style>
+   </head>
+   <body>
+
+
+      <div id="intro" class="landing parallax-container" >
+         <div class="section no-pad-bot">
+            <div class="container">
+               <br><br>
+               <center><img src="http://puzzlepedia.esy.es/puzzlepediaprofile.jpg" id="prof" class="circle" width=200px height=200px alt="profile"></center>
+               <h1 class="header center yellow-text text-darken-2" style="font-family: 'Kumar One', cursive;">Rahul  Bagad</h1>
+               <div class="row center">
+                  <div class="row">
+                     <a class="btn btn-floating pulse"><i id="social-tw" class="fa fa-github fa-2x social"></i></a>
+                     <a class="btn btn-floating pulse"><i id="social-tw" class="fa fa-facebook fa-2x social"></i></a>
+                     <a class="btn btn-floating pulse"><i id="social-tw" class="fa fa-linkedin-square fa-2x social"></i></a>
+                     <a class="btn btn-floating pulse"><i id="social-tw" class="fa fa-instagram fa-2x social"></i></a>
+                     <a class="btn btn-floating pulse"><i id="social-tw" class="fa fa-google-plus fa-2x social"></i></a>
+                  </div>
+               </div>
+               <br><br>
+            </div>
+         </div>
+         <div class="parallax"><img src="back.jpeg" style="min-height:100%" alt="Unsplashed background img 1"></div>
+      </div>
+      <div class="container" id="about">
+         <div class="section center">
+            <!--   Icon Section   -->
+            <i id="social-tw" class="fa fa-user fa-5x">
+               <h2>About Me</h2><hr>
+            </i>
+            <p>
+               I am final year student pursuing Information Technology at Walchand College of Engineering, Sangli. I like to learn new things. I am passionate about programming. I love to explore.
+            </p>
+         </div>
+      </div>
+      <div class="parallax-container valign-wrapper" id="projects">
+         <div class="section no-pad-bot">
+            <div class="container">
+               <div class="row center">
+                  <h5 class="header col s12 light">The best way out is always through.</h5>
+               </div>
+            </div>
+         </div>
+         <div class="parallax"><img src="back2.jpeg" alt="Unsplashed background img 2"></div>
+      </div>
+      <div class="container center" id="projects">
+         <h2>My Projects</h2><hr>
+         <div class="row">
+            <div class="col s12 m3"></div>
+            <div class="col s12 m6">
+               <a id="puzz" class="waves-effect waves-light btn-large" style="width:100%">PuzzlePedia</a>
+               <div id="p" class="card" style="display:none">
+                  <div class="card-image">
+                     <img src="back2.jpg">
+                     <span class="card-title">PuzzlePedia</span>
+                     <a class="btn-floating halfway-fab waves-effect waves-light red" target="_blank" href="http://github.com/rlbagad"><i class="material-icons">&#xE157;</i></a>
+                  </div>
+                  <div class="card-content">
+                     <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col s12 m3"></div>
+         </div>
+         <div class="row">
+            <div class="col s12 m3"></div>
+            <div class="col s12 m6">
+               <a id="gas" class="waves-effect waves-light btn-large" style="width:100%">Smart Gas Leak Detector</a>
+               <div id="g" class="card" style="display:none">
+                  <div class="card-image">
+                     <img src="back2.jpg">
+                     <span class="card-title">Smart Gas Leak Detector</span>
+                     <a class="btn-floating halfway-fab waves-effect waves-light red" target="_blank" href="http://github.com/rlbagad"><i class="material-icons">&#xE157;</i></a>
+                  </div>
+                  <div class="card-content">
+                     <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col s12 m3"></div>
+         </div>
+         <div class="row">
+            <div class="col s12 m3"></div>
+            <div class="col s12 m6">
+               <a id="edu" class="waves-effect waves-light btn-large" style="width:100%">Edu-OLX</a>
+               <div id="e" class="card" style="display:none">
+                  <div class="card-image">
+                     <img src="back2.jpg">
+                     <span class="card-title">PuzzlePedia</span>
+                     <a class="btn-floating halfway-fab waves-effect waves-light red" target="_blank" href="http://github.com/rlbagad"><i class="material-icons">&#xE157;</i></a>
+                  </div>
+                  <div class="card-content">
+                     <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col s12 m3"></div>
+         </div>
+         <div class="row">
+            <div class="col s12 m3"></div>
+            <div class="col s12 m6">
+               <a id="quiz" class="waves-effect waves-light btn-large" style="width:100%">Quiz-Game</a>
+               <div id="q" class="card" style="display:none">
+                  <div class="card-image">
+                     <img src="back2.jpg">
+                     <span class="card-title">Smart Gas Leak Detector</span>
+                     <a class="btn-floating halfway-fab waves-effect waves-light red" target="_blank" href="http://github.com/rlbagad"><i class="material-icons">&#xE157;</i></a>
+                  </div>
+                  <div class="card-content">
+                     <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col s12 m3"></div>
+         </div>
+      </div>
+      <div class="parallax-container valign-wrapper">
+         <div class="section no-pad-bot">
+            <div class="container">
+               <div class="row center">
+                  <h5 class="header col s12 light">The road of life twists and turns and no two directions are ever the same. Yet our lessons come from the journey, not the destination.</h5>
+               </div>
+            </div>
+         </div>
+         <div class="parallax"><img src="back3.jpeg" alt="Unsplashed background img 3"></div>
+      </div>
+      <div class="container" id="education">
+         <div class="section center">
+            <i id="social-tw" class="fa fa-university fa-5x">
+               <h2>Education</h2>
+            </i>
+            <table class="responsive-table highlight">
+               <thead>
+                  <tr>
+                     <th>Institute</th>
+                     <th>Degree</th>
+                     <th>Duration</th>
+                     <th>Score</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Walchand College of Engineering, Sangli</td>
+                     <td>B.Tech</td>
+                     <td>July 2014-May 2018</td>
+                     <td>8.34 (CGPA)</td>
+                  </tr>
+                  <tr>
+                     <td>Deogiri College, A'bad</td>
+                     <td>HSC</td>
+                     <td>April 2013-May 2014</td>
+                     <td>81.84%</td>
+                  </tr>
+                  <tr>
+                     <td>Sharda Vidya Mandir, Georai</td>
+                     <td>SSC</td>
+                     <td>April 2011-May 2012</td>
+                     <td>91.64%</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <div class="parallax-container valign-wrapper">
+         <div class="section no-pad-bot">
+            <div class="container">
+               <div class="row center">
+                  <h5 class="header col s12 light">Experience shows that success is due less to ability than to zeal</h5>
+               </div>
+            </div>
+         </div>
+         <div class="parallax"><img src="back4.jpeg" alt="Unsplashed background img 3"></div>
+      </div>
+      <div class="container" id="skills">
+         <div class="section">
+            <h2 class="center">Skills and Interests</h2>
+            <div class="row">
+               <div class="col l6 s12">
+                  <div class="card">
+                     <h2>Technical Skills</h2>
+                     <h3><b>Programming Languages: </b>C, C++, Java, Python</h3>
+                     <h3><b>Technologies: </b>GitHub, jQuery, HTML, CSS, Unix Shell, PHP</h3>
+                     <h3><b>Operating System: </b>Ubuntu 15.04</h3>
+                     <h3><b>Basic Knowledge: </b>MySQL, Arduino</h3>
+                  </div>
+               </div>
+               <div class="col l6 s12">
+                  <div class="card">
+                     <h2>Interests</h2>
+                     <h3><b>Data Science </b></h3>
+                     <h3><b>Competitive Programming </b></h3>
+                     <h3><b>Web Developement </b></h3>
+                     <h3><b>IoT </b></h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="cont" class="modal">
+        <div class="modal-content">
+          <h4>Contact Me</h4>
+            <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">account_circle</i>
+                      <input id="icon_prefix" type="text" class="validate">
+                      <label for="icon_prefix">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">phone</i>
+                      <input id="icon_telephone" type="tel" class="validate">
+                      <label for="icon_telephone">Telephone</label>
+                    </div>
+                  </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+      </div>
+      <div class="fixed-action-btn vertical click-to-toggle" style="position: fixed; bottom: 10px; right: 10px;">
+        <a class="btn-floating btn-large red">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating red" href="#about"><i class="material-icons">info_outline</i></a></li>
+          <li><a class="btn-floating yellow darken-1" href="#projects"><i class="material-icons">format_quote</i></a></li>
+          <li><a class="btn-floating green" href="#skills"><i class="material-icons">publish</i></a></li>
+          <li><a class="btn-floating blue" href="#resume"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+      </div>
+      <div style="position: fixed; bottom: 10px; left: 10px;" class="fixed-action-btn vertical">
+          <a id="c" class="btn-floating green modal-trigger" href="#cont"><i class="material-icons">comment</i></a>
+      </div>
+
+      <footer class="page-footer teal">
+         <div class="container">
+            <div class="row">
+               <div class="col l6 s12">
+               </div>
+            </div>
+         </div>
+         <div class="footer-copyright">
+         </div>
+      </footer>
+
+      <!--  Scripts-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/materialize.js"></script>
+      <script src="js/init.js"></script>
+   </body>
+</html>
