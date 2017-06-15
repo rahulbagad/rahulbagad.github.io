@@ -7,3 +7,47 @@
   filter: grayscale(0%);
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
+
+.gh-black {
+  background: #ffffff;
+  color: #000000;
+}
+
+.codepen-white {
+  color: #ffffff;
+  background: #000000;
+}
+
+.li-blue {
+  background: #007bb5;
+  color: #ffffff;
+}
+
+
+#logo-img {
+  padding: 20px;
+  // max-width: 75px;
+  //  max-height: 75x;
+}
+
+
+.social-btn {
+  width: 275px;
+ 
+}
+.btn {
+   text-transform: capitalize;
+    margin-top: 2.5px;
+  margin-bottom: 2.5px;
+  
+}
+
+
+.collapsible-body {
+  background: white;
+}
+
+.collapsible-body > ul {
+  padding: 25px;
+}
+

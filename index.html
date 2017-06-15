@@ -12,6 +12,15 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Kumar+One" rel="stylesheet">
+      <script src="js/typed.js"></script>
+      <script>
+		document.addEventListener("DOMContentLoaded", function(){
+			Typed.new("logo-text", {
+				strings: [" ","Rahul Bagad"],
+				typeSpeed: 50
+			});
+		});
+	  </script>
       <script>
          $(document).ready(function(){
            $("a").on('click', function(event) {
@@ -63,7 +72,7 @@
               });
           });
           $(document).ready(function(){
-				$(".landing").css("min-height", $( window ).height());
+				$(".landing").css("min-height", $( window ).height()- $(".nav-wrapper").height());
 				$(".container").css("margin-top", $( window ).height()/25);
 			
             });
@@ -119,17 +128,38 @@
           .container{
           	margin-top:70px;
           }
+		li.a { 
+			color: green; 
+		}
       </style>
    </head>
    <body>
-
-
+ 	
+	 <nav>
+	    <div class="nav-wrapper" style="background-color: black">
+	      <a href="#!" class="brand-logo"><i style="color: green" class="fa fa-terminal" aria-hidden="true"></i><logo-text style="color: green">Rahul Bagad</logo-text></a>
+	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+	      <ul class="right hide-on-med-and-down">
+	        <li><a href="#about">About</a></li>
+	        <li><a href="#skills">Skills</a></li>
+	        <li><a href="#projects">Projects</a></li>
+	        <li><a href="#education">Education</a></li>
+	      </ul>
+	      <ul class="side-nav" id="mobile-demo">
+	        <li><a href="#about">About</a></li>
+	        <li><a href="#skills">Skills</a></li>
+	        <li><a href="#projects">Projects</a></li>
+	        <li><a href="#education">Education</a></li>
+	      </ul>
+	    </div>
+	  </nav>   
+	
       <div id="intro" class="landing parallax-container" >
          <div class="section no-pad-bot">
             <div class="container">
                <br><br>
                <center><img src="http://puzzlepedia.esy.es/puzzlepediaprofile.jpg" id="prof" class="circle" width=200px height=200px alt="profile"></center>
-               <h1 class="header center yellow-text text-darken-2" style="font-family: 'Kumar One', cursive;">Rahul  Bagad</h1>
+               <h1 id="name" class="header center yellow-text text-darken-2" style="font-family: 'Kumar One', cursive;">Rahul  Bagad</h1>
                <div class="row center">
                   <div class="row">
                      <a class="btn btn-floating pulse"><i id="social-tw" class="fa fa-github fa-2x social"></i></a>
@@ -142,7 +172,7 @@
                <br><br>
             </div>
          </div>
-         <div class="parallax"><img src="img/back.jpeg" style="min-height:100%" alt="Unsplashed background img 1"></div>
+         <div class="parallax"><img src="img/parallax1.png" style="min-height:100%" alt="Unsplashed background img 1"></div>
       </div>
       <div class="container" id="about">
          <div class="section center">
@@ -165,6 +195,7 @@
          </div>
          <div class="parallax"><img src="img/back2.jpeg" alt="Unsplashed background img 2"></div>
       </div>
+      <!--
       <div class="container center" id="projects">
          <h2>My Projects</h2><hr>
          <div class="row">
@@ -236,6 +267,39 @@
             <div class="col s12 m3"></div>
          </div>
       </div>
+      -->
+      <section id="portfolio" style="background-color: #90CAF9">
+      <div class="row">
+        <div class="col s12 m12 l12">
+
+          <h2 class="">Recent Projects</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Smart Gas Leak Detector</span>
+              <p>It is an IOT based project which is aimed at making a cost effective system which detects LPG/CNG gas leakage and produces alarm. Also a message is sent to owner about leakage. Also the location is shown on google maps.</p>
+            </div>
+            <div class="card-action">
+              <a class="btn btn-default black codepen-white" target="_blank" title="View on CodePen " href="https://github.com/rahulbagad "><i class="fa fa-github fa-2x"></i> View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m12 l12">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Smart Gas Leak Detector</span>
+              <p>It is an IOT based project which is aimed at making a cost effective system which detects LPG/CNG gas leakage and produces alarm. Also a message is sent to owner about leakage. Also the location is shown on google maps.</p>
+            </div>
+            <div class="card-action">
+              <a class="btn btn-default black codepen-white" target="_blank" title="View on CodePen " href="https://github.com/rahulbagad "><i class="fa fa-github fa-2x"></i> View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
       <div class="parallax-container valign-wrapper">
          <div class="section no-pad-bot">
             <div class="container">
@@ -293,12 +357,12 @@
          </div>
          <div class="parallax"><img src="img/back4.jpeg" alt="Unsplashed background img 3"></div>
       </div>
-      <div class="container" id="skills">
+      <div class="container" id="skills" >
          <div class="section">
             <h2 class="center">Skills and Interests</h2>
             <div class="row">
                <div class="col l6 s12">
-                  <div class="card">
+                  <div class="card" style="background-color: #E0E0E0">
                      <h2>Technical Skills</h2>
                      <h3><b>Programming Languages: </b>C, C++, Java, Python</h3>
                      <h3><b>Technologies: </b>GitHub, jQuery, HTML, CSS, Unix Shell, PHP</h3>
@@ -306,8 +370,8 @@
                      <h3><b>Basic Knowledge: </b>MySQL, Arduino</h3>
                   </div>
                </div>
-               <div class="col l6 s12">
-                  <div class="card">
+               <div class="col l6 s12" >
+                  <div class="card" style="background-color: #E0E0E0">
                      <h2>Interests</h2>
                      <h3><b>Data Science </b></h3>
                      <h3><b>Competitive Programming </b></h3>
