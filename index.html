@@ -79,6 +79,11 @@
             $(document).ready(function(){
         			$('.modal').modal();
   			});
+	    
+			$(document).ready(function(){
+			  $('#construction').modal('open');
+			});
+	   
       </script>
       <style>
 
@@ -461,7 +466,16 @@
           <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
         </div>
       </div>
-      
+
+
+      <div id="construction" class="modal">
+        <div class="modal-content">
+            <form class="col s12">
+  				<center><h2>Website Under Construction</h2></center>
+          </form>
+        </div>
+      </div>
+
       <div style="position: fixed; bottom: 10px; left: 10px;" class="fixed-action-btn vertical">
           <a id="c" class="btn-floating green modal-trigger" href="#cont"><i class="material-icons">comment</i></a>
       </div>
