@@ -81,6 +81,7 @@
   			});
       </script>
       <style>
+
          .parallax-container {
 	         position: relative;
 	         background-attachment: fixed;
@@ -89,10 +90,25 @@
 	         background-size: cover;
 	         height: auto;
          }
+         p  {
+         	word-wrap: break-word;
+         	font-weight: 300;
+         	font-size: 20px;
+         }
          h2 {
 	         font-family: "Roboto", "Arial";
 	         font-weight: 100;
 	         font-size: 35px;
+         }
+         .degree {
+	         font-family: 'Raleway', 'sans-serif';
+	         font-weight: 300;
+	         font-size: 26px;
+         }
+         .desc {
+	         font-family: "Open Sans Condensed", "sans-serif";
+	         font-weight: 200;
+	         font-size: 20px;
          }
          h3 {
 	         font-family: "Roboto", "Arial";
@@ -128,16 +144,19 @@
           .container{
           	margin-top:70px;
           }
-		li.a { 
-			color: green; 
+		.nav-wrapper li a {
+		    color: white;
+		}
+		.card{
+			background-color: #E3F2FD
 		}
       </style>
    </head>
    <body>
  	
 	 <nav>
-	    <div class="nav-wrapper" style="background-color: black">
-	      <a href="#!" class="brand-logo"><i style="color: green" class="fa fa-terminal" aria-hidden="true"></i><logo-text style="color: green">Rahul Bagad</logo-text></a>
+	    <div class="nav-wrapper" style="background-color: #424242">
+	      <a href="#!" class="brand-logo"><i style="color: green;" class="fa fa-terminal" aria-hidden="true"></i><logo-text style="color: green">Rahul Bagad</logo-text></a>
 	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 	      <ul class="right hide-on-med-and-down">
 	        <li><a href="#about">About</a></li>
@@ -145,7 +164,7 @@
 	        <li><a href="#projects">Projects</a></li>
 	        <li><a href="#education">Education</a></li>
 	      </ul>
-	      <ul class="side-nav" id="mobile-demo">
+	      <ul class="side-nav" id="mobile-demo" style="background-color: #424242">
 	        <li><a href="#about">About</a></li>
 	        <li><a href="#skills">Skills</a></li>
 	        <li><a href="#projects">Projects</a></li>
@@ -158,7 +177,7 @@
          <div class="section no-pad-bot">
             <div class="container">
                <br><br>
-               <center><img src="http://puzzlepedia.esy.es/puzzlepediaprofile.jpg" id="prof" class="circle" width=200px height=200px alt="profile"></center>
+               <center><img src="http://puzzlepedia.esy.es/puzzlepediaprofile.jpg" id="" class="circle" width=200px height=200px alt="profile"></center>
                <h1 id="name" class="header center yellow-text text-darken-2" style="font-family: 'Kumar One', cursive;">Rahul  Bagad</h1>
                <div class="row center">
                   <div class="row">
@@ -172,16 +191,19 @@
                <br><br>
             </div>
          </div>
-         <div class="parallax"><img src="img/parallax1.png" style="min-height:100%" alt="Unsplashed background img 1"></div>
+         <div class="parallax"><img src="img/a.jpg" style="min-height:100%" alt="Unsplashed background img 1"></div>
       </div>
       <div class="container" id="about">
-         <div class="section center">
+         <div class="section">
             <!--   Icon Section   -->
-            <i id="social-tw" class="fa fa-user fa-5x">
-               <h2>About Me</h2><hr>
-            </i>
-            <p>
-               I am final year student pursuing Information Technology at Walchand College of Engineering, Sangli. I like to learn new things. I am passionate about programming. I love to explore.
+            <div class="center">
+	            <i id="social-tw" class="fa fa-user fa-5x">
+	               <h2 style="font-family: 'Yanone Kaffeesatz', sans-serif;">About Me</h2><hr>
+	            </i>
+	        </div>
+            <p class="center">
+
+               Hi, I am Rahul Bagad. I am final year student pursuing Information Technology at Walchand College of Engineering, Sangli. I like to learn new things and increase my knowledge. I am passionate about programming and I like problem solving. My areas of interest are Data Structures, Algorithms, Competitive Programming and Data Science. I am looking for an opportunity wherein I can apply my knowledge, learn new things and increase my knowledge to a new level.
             </p>
          </div>
       </div>
@@ -268,38 +290,32 @@
          </div>
       </div>
       -->
-      <section id="portfolio" style="background-color: #90CAF9">
-      <div class="row">
-        <div class="col s12 m12 l12">
+      <div class="container" id="skills" >
+         <div class="section">
+            <h2 style="font-family: 'Yanone Kaffeesatz', sans-serif;" class="center">Skills and Interests</h2><hr>
+            <div class="row">
+               <div class="col l6 s12">
+                  <div class="card">
+                     <h2>Technical Skills</h2>
+                     <h3><b>Programming Languages: </b>C, C++, Java, Python</h3>
+                     <h3><b>Technologies: </b>GitHub, jQuery, HTML, CSS, Unix Shell, PHP</h3>
+                     <h3><b>Operating System: </b>Ubuntu 15.04</h3>
+                     <h3><b>Basic Knowledge: </b>MySQL, Arduino</h3>
+                  </div>
+               </div>
+               <div class="col l6 s12" >
+                  <div class="card">
+                     <h2>Interests</h2>
+                     <h3><b>Data Science </b></h3>
+                     <h3><b>Competitive Programming </b></h3>
+                     <h3><b>Web Developement </b></h3>
+                     <h3><b>IoT </b></h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
 
-          <h2 class="">Recent Projects</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12 m12 l12">
-          <div class="card">
-            <div class="card-content">
-              <span class="card-title">Smart Gas Leak Detector</span>
-              <p>It is an IOT based project which is aimed at making a cost effective system which detects LPG/CNG gas leakage and produces alarm. Also a message is sent to owner about leakage. Also the location is shown on google maps.</p>
-            </div>
-            <div class="card-action">
-              <a class="btn btn-default black codepen-white" target="_blank" title="View on CodePen " href="https://github.com/rahulbagad "><i class="fa fa-github fa-2x"></i> View</a>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m12 l12">
-          <div class="card">
-            <div class="card-content">
-              <span class="card-title">Smart Gas Leak Detector</span>
-              <p>It is an IOT based project which is aimed at making a cost effective system which detects LPG/CNG gas leakage and produces alarm. Also a message is sent to owner about leakage. Also the location is shown on google maps.</p>
-            </div>
-            <div class="card-action">
-              <a class="btn btn-default black codepen-white" target="_blank" title="View on CodePen " href="https://github.com/rahulbagad "><i class="fa fa-github fa-2x"></i> View</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
       <div class="parallax-container valign-wrapper">
          <div class="section no-pad-bot">
             <div class="container">
@@ -310,43 +326,60 @@
          </div>
          <div class="parallax"><img src="img/back3.jpeg" alt="Unsplashed background img 3"></div>
       </div>
-      <div class="container" id="education">
-         <div class="section center">
-            <i id="social-tw" class="fa fa-university fa-5x">
-               <h2>Education</h2>
-            </i>
-            <table class="responsive-table highlight">
-               <thead>
-                  <tr>
-                     <th>Institute</th>
-                     <th>Degree</th>
-                     <th>Duration</th>
-                     <th>Score</th>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <td>Walchand College of Engineering, Sangli</td>
-                     <td>B.Tech</td>
-                     <td>July 2014-May 2018</td>
-                     <td>8.34 (CGPA)</td>
-                  </tr>
-                  <tr>
-                     <td>Deogiri College, A'bad</td>
-                     <td>HSC</td>
-                     <td>April 2013-May 2014</td>
-                     <td>81.84%</td>
-                  </tr>
-                  <tr>
-                     <td>Sharda Vidya Mandir, Georai</td>
-                     <td>SSC</td>
-                     <td>April 2011-May 2012</td>
-                     <td>91.64%</td>
-                  </tr>
-               </tbody>
-            </table>
-         </div>
+
+      <section id="portfolio">
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <h2 style="font-family: 'Yanone Kaffeesatz', sans-serif;" class="center">Projects</h2><hr>
+        </div>
       </div>
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title" >Smart Gas Leak Detector <a href="http://puzzlepedia.esy.es"><i class="material-icons">launch</i></a></span>
+              <p>It is an IOT based project which is aimed at making a cost effective system which detects LPG/CNG gas leakage and produces alarm. Also a message is sent to owner about leakage. Also the location is shown on google maps.</p>
+			  <div class="chip">
+			    Arduino
+			  </div>
+			  <div class="chip">
+			    Arduino
+			  </div>
+			  <div class="chip">
+			    Arduino
+			  </div>
+            </div>
+
+            <div class="card-action">
+              <a class="btn btn-default black" target="_blank" href="https://github.com/rahulbagad "><i class="fa fa-github fa-2x"></i> View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m12 l12">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Smart Gas Leak Detector  <a href="http://puzzlepedia.esy.es"><i class="material-icons">launch</i></a></span>
+              <p>It is an IOT based project which is aimed at making a cost effective system which detects LPG/CNG gas leakage and produces alarm. Also a message is sent to owner about leakage. Also the location is shown on google maps.</p>
+			  <div class="chip">
+			    HTML
+			  </div>
+			  <div class="chip">
+			    Bootstrap
+			  </div>
+			  <div class="chip">
+			    JavaScript
+			  </div>
+            </div>
+
+            <div class="card-action">
+              <a class="btn btn-default black" target="_blank" href="https://github.com/rahulbagad "><i class="fa fa-github fa-2x"></i> View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
       <div class="parallax-container valign-wrapper">
          <div class="section no-pad-bot">
             <div class="container">
@@ -357,29 +390,52 @@
          </div>
          <div class="parallax"><img src="img/back4.jpeg" alt="Unsplashed background img 3"></div>
       </div>
-      <div class="container" id="skills" >
+
+
+      <div class="container" id="education">
          <div class="section">
-            <h2 class="center">Skills and Interests</h2>
+            <center>
+               <h2 style="font-family: 'Yanone Kaffeesatz', sans-serif;">Education</h2><hr>
+            </center>
+            <br><br><br>
             <div class="row">
-               <div class="col l6 s12">
-                  <div class="card" style="background-color: #E0E0E0">
-                     <h2>Technical Skills</h2>
-                     <h3><b>Programming Languages: </b>C, C++, Java, Python</h3>
-                     <h3><b>Technologies: </b>GitHub, jQuery, HTML, CSS, Unix Shell, PHP</h3>
-                     <h3><b>Operating System: </b>Ubuntu 15.04</h3>
-                     <h3><b>Basic Knowledge: </b>MySQL, Arduino</h3>
-                  </div>
-               </div>
-               <div class="col l6 s12" >
-                  <div class="card" style="background-color: #E0E0E0">
-                     <h2>Interests</h2>
-                     <h3><b>Data Science </b></h3>
-                     <h3><b>Competitive Programming </b></h3>
-                     <h3><b>Web Developement </b></h3>
-                     <h3><b>IoT </b></h3>
-                  </div>
-               </div>
+	            <div class="col s9">
+		      		 <div class="degree">B.Tech Information Technology</div>
+		             <div class="desc">Walchand College of Engineering, Sangli</div>
+		             <div class="desc">8.34 (CGPA)</div>
+	            </div>
+	           
+	            <div class="col s3">
+	            	<div class="desc">July 2014-May 2018</div>
+	            </div>
             </div>
+            <br>
+
+            <div class="row">
+	            <div class="col s9">
+		      		 <div class="degree">Higher School Secondary Certificate</div>
+		             <div class="desc">Deogiri College, A'bad</div>
+		             <div class="desc">81.85%</div>
+	            </div>
+	           
+	            <div class="col s3">
+	            	<div class="desc">April 2013-May 2014</div>
+	            </div>
+            </div>
+            <br>
+                         
+
+            <div class="row">
+	            <div class="col s9">
+		      		 <div class="degree">Secondary School Certificate</div>
+		             <div class="desc">Sharda Vidya Mandir, Georai</div>
+		             <div class="desc">91.64%</div>
+	            </div>
+	           
+	            <div class="col s3">
+	            	<div class="desc">April 2013-May 2014</div>
+	            </div>
+            </div>                 
          </div>
       </div>
 
@@ -405,29 +461,18 @@
           <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
         </div>
       </div>
-      <div class="fixed-action-btn vertical click-to-toggle" style="position: fixed; bottom: 10px; right: 10px;">
-        <a class="btn-floating btn-large red">
-          <i class="material-icons">menu</i>
-        </a>
-        <ul>
-          <li><a class="btn-floating red" href="#about"><i class="material-icons">info_outline</i></a></li>
-          <li><a class="btn-floating yellow darken-1" href="#projects"><i class="material-icons">format_quote</i></a></li>
-          <li><a class="btn-floating green" href="#skills"><i class="material-icons">publish</i></a></li>
-          <li><a class="btn-floating blue" href="#resume"><i class="material-icons">attach_file</i></a></li>
-        </ul>
-      </div>
+      
       <div style="position: fixed; bottom: 10px; left: 10px;" class="fixed-action-btn vertical">
           <a id="c" class="btn-floating green modal-trigger" href="#cont"><i class="material-icons">comment</i></a>
       </div>
 
       <footer class="page-footer teal">
          <div class="container">
-            <div class="row">
-               <div class="col l6 s12">
-               </div>
-            </div>
-         </div>
-         <div class="footer-copyright">
+         <center>
+         	<h2>My Resume</h2>
+	         <div><a class="btn btn-floating pulse"><i id="social-tw" class="fa fa-download fa-2x social"></i></a>
+	         </div>
+         </center>
          </div>
       </footer>
 
