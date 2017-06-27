@@ -11,11 +11,6 @@
              font-weight: 250;
              font-size: 18px;
          }
-	 .card-title {
-             font-family: "Roboto", "Arial";
-             font-weight: 400;
-             font-size: 25px;
-	 }
          h2 {
              font-family: "Roboto", "Arial";
              font-weight: 100;
@@ -119,19 +114,12 @@
              background: #ffffff;
              color: #000000;
          }
-         .codepen-white {
-             color: #ffffff;
-             background: #000000;
-         }
+
          .li-blue {
              background: #007bb5;
              color: #ffffff;
          }
-         #logo-img {
-             padding: 20px;
-             // max-width: 75px;
-             //  max-height: 75x;
-         }
+
          .social-btn {
              width: 275px;
          }
