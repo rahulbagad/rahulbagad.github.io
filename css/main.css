@@ -8,9 +8,14 @@
          }
          p {
              word-wrap: break-word;
-             font-weight: 300;
+             font-weight: 250;
              font-size: 18px;
          }
+	 .card-title {
+             font-family: "Roboto", "Arial";
+             font-weight: 400;
+             font-size: 25px;
+	 }
          h2 {
              font-family: "Roboto", "Arial";
              font-weight: 100;
@@ -18,12 +23,12 @@
          }
          .degree {
              font-family: 'Raleway', 'sans-serif';
-             font-weight: 300;
-             font-size: 26px;
+             font-weight: 350;
+             font-size: 25px;
          }
          .desc {
              font-family: "Open Sans Condensed", "sans-serif";
-             font-weight: 200;
+             font-weight: 250;
              font-size: 18px;
          }
          h3 {
