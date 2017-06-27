@@ -1,27 +1,25 @@
-<script>
          $(document).ready(function(){
            $("a").on('click', function(event) {
-
+         
              if (this.hash !== "") {
                event.preventDefault();
-
+         
                var hash = this.hash;
                $('html, body').animate({
                  scrollTop: $(hash).offset().top
                }, 800, function(){
-
                  window.location.hash = hash;
                });
              }
            });
          });
-
+         
           $(document).ready(function(){
               $("#puzz").click(function(){
                   $("#p").fadeToggle(1000);
               });
           });
-
+         
           $(document).ready(function(){
               $("#gas").click(function(){
                   $("#g").fadeToggle(1000);
@@ -37,5 +35,21 @@
                   $("#q").fadeToggle(1000);
               });
           });
-
-</script>
+          $(document).ready(function(){
+               $(".landing").css("min-height", $( window ).height()- $(".nav-wrapper").height());
+               $(".container").css("margin-top", $( window ).height()/25);
+               $(".links").css("top", $( window ).height()*75/100)
+               $(".links").css("left", $( window ).width()*75/100)
+          });
+          $(document).ready(function(){
+         		$('.modal').modal();
+         });
+         $(document).ready(function(){
+         $('#construction').modal('open');
+         });
+         $(document).ready(function(){
+         $('.carousel').carousel();
+         });
+         $(document).ready(function(){
+         $('.materialboxed').materialbox();
+         });

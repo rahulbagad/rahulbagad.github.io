@@ -5,6 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
       <title>Personal Portfolio</title>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
       <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
       <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -13,145 +14,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Kumar+One" rel="stylesheet">
       <script src="js/typed.js"></script>
-      <script>
-         document.addEventListener("DOMContentLoaded", function(){
-         	Typed.new("abcd", {
-         		strings: [" ","Rahul Bagad"],
-         		typeSpeed: 50
-         	});
-         });
-          
-      </script>
-      <script>
-         $(document).ready(function(){
-           $("a").on('click', function(event) {
-         
-             if (this.hash !== "") {
-               event.preventDefault();
-         
-               var hash = this.hash;
-               $('html, body').animate({
-                 scrollTop: $(hash).offset().top
-               }, 800, function(){
-                 window.location.hash = hash;
-               });
-             }
-           });
-         });
-         
-          $(document).ready(function(){
-              $("#puzz").click(function(){
-                  $("#p").fadeToggle(1000);
-              });
-          });
-         
-          $(document).ready(function(){
-              $("#gas").click(function(){
-                  $("#g").fadeToggle(1000);
-              });
-          });
-          $(document).ready(function(){
-              $("#edu").click(function(){
-                  $("#e").fadeToggle(1000);
-              });
-          });
-          $(document).ready(function(){
-              $("#quiz").click(function(){
-                  $("#q").fadeToggle(1000);
-              });
-          });
-          $(document).ready(function(){
-         $(".landing").css("min-height", $( window ).height()- $(".nav-wrapper").height());
-         $(".container").css("margin-top", $( window ).height()/25);
-         
-            });
-            $(document).ready(function(){
-         		$('.modal').modal();
-         });
-         
-         $(document).ready(function(){
-         $('#construction').modal('open');
-         });
-         $(document).ready(function(){
-         $('.carousel').carousel();
-         });
-         $(document).ready(function(){
-         $('.materialboxed').materialbox();
-         });
-         
-      </script>
-      <style>
-         .parallax-container {
-         position: relative;
-         background-attachment: fixed;
-         background-position: center;
-         background-repeat: no-repeat;
-         background-size: cover;
-         height: auto;
-         }
-         p  {
-         word-wrap: break-word;
-         font-weight: 300;
-         font-size: 18px;
-         }
-         h2 {
-         font-family: "Roboto", "Arial";
-         font-weight: 100;
-         font-size: 35px;
-         }
-         .degree {
-         font-family: 'Raleway', 'sans-serif';
-         font-weight: 300;
-         font-size: 26px;
-         }
-         .desc {
-         font-family: "Open Sans Condensed", "sans-serif";
-         font-weight: 200;
-         font-size: 18px;
-         }
-         h3 {
-         font-family: "Roboto", "Arial";
-         font-weight: 300;
-         font-size: 17px;
-         line-height: 25px;
-         padding-top: 10px;
-         }
-         hr{
-         height: 30px;
-         border-style: solid;
-         border-color: black;
-         border-width: 1px 0 0 0;
-         border-radius: 20px;
-         }
-         hr {
-         display: block;
-         content: "";
-         height: 30px;
-         margin-top: -31px;
-         border-style: solid;
-         border-color: black;
-         border-width: 0 0 1px 0;
-         border-radius: 20px;
-         }
-         .landing{
-         min-height: 640px;
-         height: auto;
-         color: rgba(255,255,255,.9);
-         min-width: 100%;
-         }
-         .container{
-         margin-top:70px;
-         }
-         .nav-wrapper li a {
-         color: white;
-         }
-         .card {
-         position: relative;
-         border-radius: 8px;
-         box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.8);
-         overflow: hidden;
-         }
-      </style>
+      <script src="js/main.js"></script>
    </head>
    <body>
       <nav>
@@ -179,7 +42,7 @@
             <div class="container">
                <br><br>
                <center><img src="img/profile.jpg" class="circle" width=200px height=200px alt="profile"></center>
-               <h1 id="name" class="header center grey-text text-darken-2" style="font-family: 'Kumar One', cursive;">Rahul  Bagad</h1>
+               <h1 id="name" class="header center grey-text text-darken-2" style="font-family: 'Kumar One', cursive;">Rahul Bagad</h1>
                <div class="row center">
                   <div class="row">
                      <a class="btn btn-floating pulse"><i id="social-tw" class="fa fa-github fa-2x social"></i></a>
@@ -221,9 +84,9 @@
 
       <div class="container" id="skills">
          <div class="section">
-            <h2 style="font-family: 'Yanone Kaffeesatz', sans-serif;" class="center">Skills and Interests</h2>
-            <hr>
-            <div class="row">
+            <h2 style="font-family: 'Yanone Kaffeesatz', sans-serif;" class="center">Skills</h2>
+            <hr><br>
+            <!--<div class="row">
                <div class="col l6 s12">
                   <div class="card" style="padding: 10px;">
                      <h2>Technical Skills</h2>
@@ -233,6 +96,8 @@
                      <h3><b>Basic Knowledge: </b>MySQL, Arduino</h3>
                   </div>
                </div>
+
+
                <div class="col l6 s12" >
                   <div class="card" style="padding: 10px;">
                      <h2>Interests</h2>
@@ -241,8 +106,34 @@
                      <h3><b>Web Developement </b></h3>
                      <h3><b>IoT </b></h3>
                   </div>
+
                </div>
             </div>
+            -->
+            <div class="row">
+               <div class="col m2 s4" ><i class="devicon-c-plain-wordmark colored"></i></div>
+               <div class="col m2 s4" ><i class="devicon-cplusplus-plain colored"></i></div>
+               <div class="col m2 s4" ><i class="devicon-java-plain colored"></i></div>
+               <div class="col m2 s4" ><i class="devicon-python-plain colored"></i></div>
+               <div class="col m2 s4" ><i class="devicon-php-plain colored"></i></div>
+               <div class="col m2 s4" ><i class="devicon-javascript-plain colored"></i></div>
+            </div>
+
+            <div class="row">
+               <div class="col m2 s4" ><i class="devicon-mysql-plain-wordmark colored"></i></div>
+               <div class="col m2 s4" ><i class="devicon-jquery-plain-wordmark colored"></i></div>
+               <div class="col m2 s4" ><i class="devicon-html5-plain colored"></i></div>
+               <div class="col m2 s4" ><i class="devicon-ubuntu-plain colored"></i></div>
+               <div class="col m2 s4" ><i class="devicon-git-plain colored"></i></div>
+               <div class="col m2 s4" ><i class="devicon-css3-plain colored"></i></div>
+            </div>
+
+            <div class="row">
+               <div class="col m2 s4" ><i class="devicon-bootstrap-plain colored"></i></div>
+               <div class="col m2 s4" ><img src="img/logo.png" style="width: 5rem;height: 5rem;"></div>
+            </div>
+            
+            
          </div>
       </div>
       <div class="parallax-container valign-wrapper">
@@ -370,7 +261,7 @@
                   <div class="col s9">
                      <div class="degree">B.Tech Information Technology</div>
                      <div class="desc">Walchand College of Engineering, Sangli</div>
-                     <div class="desc">8.34 (CGPA)</div>
+                     <div class="desc">8.34 (CPI)</div>
                   </div>
                   <div class="col s3">
                      <div class="desc">July 2014-May 2018</div>
