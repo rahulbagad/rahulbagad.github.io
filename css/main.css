@@ -8,7 +8,7 @@
          }
          p {
              word-wrap: break-word;
-             font-weight: 250;
+             font-weight: 300;
              font-size: 18px;
          }
          h2 {
@@ -18,12 +18,12 @@
          }
          .degree {
              font-family: 'Raleway', 'sans-serif';
-             font-weight: 350;
-             font-size: 25px;
+             font-weight: 300;
+             font-size: 26px;
          }
          .desc {
              font-family: "Open Sans Condensed", "sans-serif";
-             font-weight: 250;
+             font-weight: 200;
              font-size: 18px;
          }
          h3 {
@@ -114,12 +114,19 @@
              background: #ffffff;
              color: #000000;
          }
-
+         .codepen-white {
+             color: #ffffff;
+             background: #000000;
+         }
          .li-blue {
              background: #007bb5;
              color: #ffffff;
          }
-
+         #logo-img {
+             padding: 20px;
+             // max-width: 75px;
+             //  max-height: 75x;
+         }
          .social-btn {
              width: 275px;
          }
