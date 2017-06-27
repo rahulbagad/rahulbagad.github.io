@@ -78,29 +78,29 @@
              padding: 20px;
              font-size: 5rem;
          }
-         .colored {
+         .icons {
              display: inline-block;
              border: 0;
              position: relative;
-             -webkit-transition: all 200ms ease-in;
+             -webkit-transition: all 180ms ease-in;
              -webkit-transform: scale(1);
-             -ms-transition: all 200ms ease-in;
+             -ms-transition: all 180ms ease-in;
              -ms-transform: scale(1);
-             -moz-transition: all 200ms ease-in;
+             -moz-transition: all 180ms ease-in;
              -moz-transform: scale(1);
-             transition: all 200ms ease-in;
+             transition: all 180ms ease-in;
              transform: scale(1);
          }
-         .colored:hover {
+         .icons:hover {
              z-index: 2;
-             -webkit-transition: all 200ms ease-in;
-             -webkit-transform: scale(1.5);
-             -ms-transition: all 200ms ease-in;
-             -ms-transform: scale(1.5);
-             -moz-transition: all 200ms ease-in;
-             -moz-transform: scale(1.5);
-             transition: all 200ms ease-in;
-             transform: scale(1.5);
+             -webkit-transition: all 180ms ease-in;
+             -webkit-transform: scale(1.3);
+             -ms-transition: all 180ms ease-in;
+             -ms-transform: scale(1.3);
+             -moz-transition: all 180ms ease-in;
+             -moz-transform: scale(1.3);
+             transition: all 180ms ease-in;
+             transform: scale(1.3);
          }
          .card {
              -webkit-filter: grayscale(100%);
