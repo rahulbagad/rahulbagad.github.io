@@ -14,11 +14,25 @@
            });
          });
          
-          $(document).ready(function(){
+	$("a[href='#top']").click(function() {
+	  $("html, body").animate({ scrollTop: 0 }, "slow");
+	  return false;
+	});
+
+	$(document).scroll(function() {
+	  var y = $(this).scrollTop();
+	  if (y > 800) {
+	    $('#stt').fadeIn("fast");
+	  } else {
+	    $('#stt').fadeOut("fast");
+	  }
+	});
+
+         $(document).ready(function(){
               $("#puzz").click(function(){
                   $("#p").fadeToggle(1000);
               });
-          });
+         });
          
           $(document).ready(function(){
               $("#gas").click(function(){
