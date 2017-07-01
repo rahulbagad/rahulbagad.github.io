@@ -15,14 +15,14 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Kumar+One" rel="stylesheet">
-      <script src="js/typed.js"></script>
+      <script src="js/typed.min.js"></script>
       <script src="js/main.js"></script>
    </head>
    <body>
       <nav>
          <div id="top" class="nav-wrapper" style="background-color: #FFFFFF">
             <a href="#!" class="brand-logo" style="color: black;">
-               <logo-text style="font-family: font-family: 'Play', sans-serif; color: #444; padding-left: 2rem;"><b>Rahul Bagad</b></logo-text>
+               <logo-text style="font-family: 'Play', sans-serif; color: #444; padding-left: 2rem;"><b>Rahul Bagad</b></logo-text>
             </a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
@@ -30,6 +30,7 @@
                <li><a href="#skills"><i class="fa fa-star" aria-hidden="true"></i> Skills</a></li>
                <li><a href="#projects"><i class="fa fa-briefcase" aria-hidden="true"></i> Projects</a></li>
                <li><a href="#education"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</a></li>
+               <li><a href="#experience"><i class="fa fa-joomla" aria-hidden="true"></i> Experience</a></li>
                <li><a href="#resume"><i class="fa fa-file-text" aria-hidden="true"></i> Resume</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo" style="background-color: #FFFFFF">
@@ -37,6 +38,7 @@
                <li><a href="#skills"><i class="fa fa-star" aria-hidden="true"></i> Skills</a></li>
                <li><a href="#projects"><i class="fa fa-briefcase" aria-hidden="true"></i> Projects</a></li>
                <li><a href="#education"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</a></li>
+               <li><a href="#experience"><i class="fa fa-joomla" aria-hidden="true"></i> Experience</a></li>
                <li><a href="#resume"><i class="fa fa-file-text" aria-hidden="true"></i> Resume</a></li>
             </ul>
          </div>
@@ -130,10 +132,12 @@
          <div class="section no-pad-bot">
             <div class="container">
                <div class="row center">
+                  <h2></h2>
+                  <span id="typed"></span>
                </div>
             </div>
          </div>
-         <div class="parallax" style="background-color: #B2DFDB"><img src="img/world-map.png" alt="Unsplashed background img 3">
+         <div class="parallax" style="background-color: #42A5F5"><img src="img/icons/original.png" alt="Unsplashed background img 3">
          </div>
       </div>
       <section id="projects">
@@ -301,6 +305,61 @@
             </div>
          </div>
       </div>
+
+ <div class="parallax-container valign-wrapper">
+         <div class="section no-pad-bot">
+            <div class="container">
+               <div class="row center">
+                  <h5 class="header col s12 light">
+                  </h5>
+               </div>
+            </div>
+         </div>
+         <div class="parallax" ><img src="img/icons/back-banner.jpg" alt="img 3"></div>
+      </div>
+
+      <div class="container" id="experience">
+         <div class="section">
+            <center>
+               <h2>Experience</h2>
+               <hr class="heading">
+            </center>
+            <br><br><br>
+            <div style="padding: 10px">
+               <div class="row">
+                  <div class="col s12 m9">
+                     <div class="degree">Joint PHP Developer</div>                  <blockquote>
+                        <div class="desc">PitchTeq</div><hr>
+                        <div class="desc">A group of college students established a web solutions startup. Worked on event website and e-commerce website.</div>
+                     </blockquote>
+                  </div>
+                  <div class="col s12 m3 desc">July 2016-present</div>
+               </div>
+               <br>
+               <div class="row">
+                  <div class="col s12 m9">
+                     <div class="degree">Creative Team Head</div>
+                     <blockquote>
+                        <div class="desc">Personality Advancement Circle of Engineers</div><hr>
+                        <div class="desc">Worked as web developer. Designed a website for megaevent - Prudence.</div>
+                     </blockquote>
+                  </div>
+                  <div class="col s12 m3 desc">January 2017-Present</div>
+               </div>
+               <br>
+               <div class="row">
+                  <div class="col s12 m9">
+                     <div class="degree">Joint Web Developer</div>
+                     <blockquote>
+                        <div class="desc">Personality Advancement Circle of Engineers</div><hr>
+                        <div class="desc">Learnt about web development and assisted chief web developers in their work.</div>
+                     </blockquote>
+                  </div>  
+                  <div class="col s12 m3 desc">April 2016-January 2017</div>
+               </div>
+            </div>
+         </div>
+      </div>
       <div id="cont" class="modal">
          <div class="modal-content">
             <h4>Contact Me</h4>
@@ -332,8 +391,9 @@
             </form>
          </div>
       </div>
+
       <div style="position: fixed; bottom: 10px; right: 10px;" id="stt">
-             <a href="#top"><img src="img/icons/scrolltop.png" style="width:4rem; height: 4rem;"></a>
+         <a href="#top" class="waves-effect waves-light btn btn-floating "><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
       </div>
       <!--
          <div style="position: fixed; bottom: 10px; left: 10px;" class="fixed-action-btn vertical">
@@ -349,6 +409,8 @@
             </center>
          </div>
       </footer>
+
+      
       <!--  Scripts-->
       <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script src="js/materialize.js"></script>
