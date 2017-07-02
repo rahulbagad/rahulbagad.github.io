@@ -1,11 +1,10 @@
- .parallax-container {
-             position: relative;
-             background-attachment: fixed;
-             background-position: center;
-             background-repeat: no-repeat;
-             background-size: cover;
-             height: auto;
-         }
+
+	.parallax-container {
+	    min-height: 500px;
+	    line-height: 0;
+	    height: auto;
+	    color: rgba(255,255,255,.9);
+	}
          p {
              word-wrap: break-word;
              font-weight: 300;
@@ -75,9 +74,13 @@
              top: ;
              left: ;
          }
-         .colored {
+         .icon-setting {
              padding: 20px;
              font-size: 5rem;
+         }
+         .thanks-icons {
+             padding: 10px;
+             font-size: 4rem;
          }
          .icons {
              display: inline-block;
