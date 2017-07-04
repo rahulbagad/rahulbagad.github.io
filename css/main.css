@@ -1,4 +1,6 @@
-
+	.card-title{
+	    font-family: 'Play', sans-serif;	
+	}
 	.parallax-container {
 	    min-height: 500px;
 	    line-height: 0;
