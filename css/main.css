@@ -131,9 +131,11 @@
              color: #ffffff;
              background: #000000;
          }
-         .li-blue {
-             background: #007bb5;
-             color: #ffffff;
+         li {
+             word-wrap: break-word;
+             font-weight: 300;
+             font-size: 18px;
+	     text-align:justify;
          }
          #logo-img {
              padding: 20px;
