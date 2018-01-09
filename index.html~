@@ -101,6 +101,7 @@
          </div>
          <div class="parallax" style="background-color: #26C6DA"><img src="img/stars.png" alt="back1"></div>
       </div>
+
       <div class="container" id="skills">
          <div class="section">
             <h2 class="center">Skills</h2>
