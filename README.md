@@ -1,3 +1,3 @@
 Personal Portfolio website.
-Web address: rlbagad.github.io
+Web address: rahulbagad.github.io
 http://www.rahulbagad.me
