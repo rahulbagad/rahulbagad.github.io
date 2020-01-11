@@ -59,6 +59,7 @@ function draw() {
       if (tiger.hits(t)) {
         console.log('game over');
         noLoop();
+        alert("Tiger Mar Gaya");
       }
     }
 
