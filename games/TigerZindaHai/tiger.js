@@ -2,14 +2,14 @@ class Tiger {
   constructor() {
     this.r = 250;
     this.x = 50;
-    this.y = height - this.r;
+    this.y = height - this.r + 20;
     this.vy = 0;
     this.gravity = 3;
   }
 
   jump() {
     if (this.y == height - this.r) {
-      this.vy = -35;
+      this.vy = -70;
     }
   }
 
