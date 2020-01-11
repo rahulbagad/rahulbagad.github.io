@@ -40,11 +40,11 @@ function keyPressed() {
 
 function draw() {
   if (random(1) < 0.005) {
-    obstacles.push(new Train());
+    obstacles.push(new SpeedBreaker());
   }
 
   background(bImg);
-  for (let t of trains) {
+  for (let t of obstacles) {
     t.move();
     t.show();
     if (tiger.hits(t)) {
