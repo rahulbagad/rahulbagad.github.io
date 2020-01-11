@@ -3,7 +3,6 @@ let uImg;
 let tImg;
 let bImg;
 let obstacles = [];
-let soundClassifier;
 
 function preload() {
   const options = {
@@ -22,14 +21,12 @@ function mousePressed() {
 function setup() {
   createCanvas(800, 450);
   tiger = new Tiger();
-  soundClassifier.classify(gotCommand);
 }
 
 function gotCommand(error, results) {
   if (error) {
     console.error(error);
   }
-  console.log(results[0].label, results[0].confidence);
   if (results[0].label == 'up') {
     tiger.jump();
   }
