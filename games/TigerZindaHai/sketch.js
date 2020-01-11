@@ -12,7 +12,7 @@ function preload() {
     probabilityThreshold: 0.95
   };
   tigerImg = loadImage('tiger.png');
-  obstacleImg1 = loadImage('obstacle1.png');
+  obstacleImg1 = loadImage('obstacle1.gif');
   obstacleImg2 = loadImage('obstacle2.png');
   backgroundImg = loadImage('road.gif');
   landingImg =  loadImage("home.jpeg");
