@@ -18,7 +18,7 @@ function mousePressed() {
 }
 
 function setup() {
-  createCanvas(window,screen.width, window,screen.height);
+  createCanvas(windowWidth, windowHeight);
   tiger = new Tiger();
 }
 
