@@ -3,6 +3,8 @@ let tigerImg;
 let obstacleImg;
 let backgroundImg;
 let obstacles = [];
+let startGame = false
+let landingImg;
 
 function preload() {
   const options = {
@@ -11,6 +13,7 @@ function preload() {
   tigerImg = loadImage('tiger.png');
   obstacleImg = loadImage('obstacle.png');
   backgroundImg = loadImage('road.gif');
+  landingImg =  loadImage("home.jpeg");
 }
 
 function mousePressed() {
@@ -32,26 +35,35 @@ function gotCommand(error, results) {
 }
 
 function keyPressed() {
-  if (key == ' ') {
-    tiger.jump();
+  if(startGame === false)
+    startGame = true;
+  else{
+    if (key == ' ') {
+        tiger.jump();
+      }
   }
 }
 
 function draw() {
-  if (random(1) < 0.005) {
-    obstacles.push(new SpeedBreaker());
-  }
-
-  background(backgroundImg);
-  for (let t of obstacles) {
-    t.move();
-    t.show();
-    if (tiger.hits(t)) {
-      console.log('game over');
-      noLoop();
+  if(startGame){
+    if (random(1) < 0.005) {
+      obstacles.push(new SpeedBreaker());
     }
-  }
 
-  tiger.show();
-  tiger.move();
+    background(backgroundImg);
+    for (let t of obstacles) {
+      t.move();
+      t.show();
+      if (tiger.hits(t)) {
+        console.log('game over');
+        noLoop();
+      }
+    }
+
+    tiger.show();
+    tiger.move();
+  }
+  else{
+    background(landingImg);
+  }
 }
