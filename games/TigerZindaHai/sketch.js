@@ -10,7 +10,7 @@ function preload() {
   };
   tigerImg = loadImage('tiger.png');
   obstacleImg = loadImage('obstacle.png');
-  backgroundImg = loadImage('road.jpg');
+  backgroundImg = loadImage('road.gif');
 }
 
 function mousePressed() {
