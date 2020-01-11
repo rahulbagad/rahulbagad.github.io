@@ -10,7 +10,7 @@ function preload() {
   };
   soundClassifier = ml5.soundClassifier('SpeechCommands18w', options);
   uImg = loadImage('tiger.jpeg');
-  tImg = loadImage('obstacle.jpg');
+  tImg = loadImage('obstacle.png');
   bImg = loadImage('background.jpg');
 }
 
