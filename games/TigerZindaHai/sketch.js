@@ -10,8 +10,7 @@ function preload() {
   };
   tigerImg = loadImage('tiger.png');
   obstacleImg = loadImage('obstacle.png');
-  backgroundImg = loadImage('background.jpg');
-  home =loadImage("home.jpeg")
+  backgroundImg = loadImage('road.jpg');
 }
 
 function mousePressed() {
@@ -39,7 +38,6 @@ function keyPressed() {
 }
 
 function draw() {
-  background(home);
   if (random(1) < 0.005) {
     obstacles.push(new SpeedBreaker());
   }
