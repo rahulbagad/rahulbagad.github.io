@@ -1,6 +1,6 @@
 class SpeedBreaker {
   constructor() {
-    this.r = 10;
+    this.r = 75;
     this.x = width;
     this.y = height - this.r;
   }
@@ -10,6 +10,6 @@ class SpeedBreaker {
   }
 
   show() {
-    image(tImg, this.x, this.y, this.r, this.r);
+    image(obstacleImg, this.x, this.y, this.r, this.r);
   }
 }

@@ -1,16 +1,17 @@
 let tiger;
-let uImg;
-let tImg;
-let bImg;
+let tigerImg;
+let obstacleImg;
+let backgroundImg;
 let obstacles = [];
 
 function preload() {
   const options = {
     probabilityThreshold: 0.95
   };
-  uImg = loadImage('tiger.png');
-  tImg = loadImage('obstacle.png');
-  bImg = loadImage('background.jpg');
+  tigerImg = loadImage('tiger.png');
+  obstacleImg = loadImage('obstacle.png');
+  backgroundImg = loadImage('background.jpg');
+  home =loadImage("home.jpeg")
 }
 
 function mousePressed() {
@@ -38,11 +39,12 @@ function keyPressed() {
 }
 
 function draw() {
+  background(home);
   if (random(1) < 0.005) {
     obstacles.push(new SpeedBreaker());
   }
 
-  background(bImg);
+  background(backgroundImg);
   for (let t of obstacles) {
     t.move();
     t.show();

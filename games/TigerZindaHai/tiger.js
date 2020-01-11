@@ -1,6 +1,6 @@
 class Tiger {
   constructor() {
-    this.r = 10;
+    this.r = 100;
     this.x = 50;
     this.y = height - this.r;
     this.vy = 0;
@@ -28,6 +28,6 @@ class Tiger {
   }
 
   show() {
-    image(uImg, this.x, this.y, this.r, this.r);
+    image(tigerImg, this.x, this.y, this.r, this.r);
   }
 }
