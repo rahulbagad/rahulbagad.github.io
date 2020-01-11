@@ -1,17 +1,19 @@
 let tiger;
 let tigerImg;
-let obstacleImg;
+let obstacleImg1;
+let obstacleImg2;
 let backgroundImg;
 let obstacles = [];
 let startGame = false
 let landingImg;
-
+let obstacleCounter = 0
 function preload() {
   const options = {
     probabilityThreshold: 0.95
   };
   tigerImg = loadImage('tiger.png');
-  obstacleImg = loadImage('obstacle.png');
+  obstacleImg1 = loadImage('obstacle1.png');
+  obstacleImg2 = loadImage('obstacle2.png');
   backgroundImg = loadImage('road.gif');
   landingImg =  loadImage("home.jpeg");
 }

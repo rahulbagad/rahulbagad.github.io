@@ -10,6 +10,9 @@ class SpeedBreaker {
   }
 
   show() {
-    image(obstacleImg, this.x, this.y, this.r, this.r);
+    if(obstacleCounter % 2 == 0)
+      image(obstacleImg1, this.x, this.y, this.r, this.r);
+    else
+      image(obstacleImg2, this.x, this.y, this.r, this.r);
   }
 }
