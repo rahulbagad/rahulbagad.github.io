@@ -48,10 +48,10 @@ function keyPressed() {
 }
 
 function draw() {
-  score =score + 1;
-  document.getElementById("score").innerHTML= "SCORE: " + score;
+
   if(startGame){
     if (random(1) < 0.005) {
+      updateScore();
       obstacles.push(new SpeedBreaker());
     }
 
@@ -73,4 +73,9 @@ function draw() {
   else{
     background(landingImg);
   }
+}
+
+function updateScore(){
+  score =score + 1;
+  document.getElementById("score").innerHTML= "SCORE: " + score;
 }
