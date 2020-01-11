@@ -60,6 +60,7 @@ function draw() {
         console.log('game over');
         noLoop();
         alert("Khel Katam! Tiger Mar Gaya!");
+        location.reload();
       }
     }
 
