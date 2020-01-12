@@ -56,7 +56,7 @@ function keyPressed() {
 function draw() {
 
   if(startGame){
-    if (random(1) < 0.05) {
+    if (random(1) < 0.003) {
       updateScore();
       currentObstacle = obstacleList[obstacleCounter % obstacleList.length]
       obstacleCounter = obstacleCounter + 1;
