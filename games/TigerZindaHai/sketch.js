@@ -2,12 +2,14 @@ let tiger;
 let tigerImg;
 let obstacleImg1;
 let obstacleImg2;
+let obstacleImg3;
 let backgroundImg;
 let obstacles = [];
 let startGame = false
 let landingImg;
 let obstacleCounter = 0
 let score = 0
+let obstacleList = []
 function preload() {
   const options = {
     probabilityThreshold: 0.95
@@ -17,6 +19,8 @@ function preload() {
   obstacleImg2 = loadImage('obstacle2.png');
   backgroundImg = loadImage('road.gif');
   landingImg =  loadImage("home.jpeg");
+  obstacleImg3 = loadImage("obstacle3.png");
+  obstacleList.push(obstacleImg1, obstacleImg2, obstacleImg3);
 }
 
 function mousePressed() {
