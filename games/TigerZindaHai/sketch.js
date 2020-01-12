@@ -7,9 +7,10 @@ let backgroundImg;
 let obstacles = [];
 let startGame = false
 let landingImg;
-let obstacleCounter = 0
+let obstacleCounter;
 let score = 0
 let obstacleList = []
+let currentObstacle;
 function preload() {
   const options = {
     probabilityThreshold: 0.95
@@ -21,6 +22,7 @@ function preload() {
   landingImg =  loadImage("home.jpeg");
   obstacleImg3 = loadImage("obstacle3.png");
   obstacleList.push(obstacleImg1, obstacleImg2, obstacleImg3);
+  obstacleCounter = 0;
 }
 
 function mousePressed() {
@@ -56,6 +58,8 @@ function draw() {
   if(startGame){
     if (random(1) < 0.005) {
       updateScore();
+      currentObstacle = obstacleList[obstacleCounter % obstacleList.length]
+      obstacleCounter = obstacleCounter + 1;
       obstacles.push(new SpeedBreaker());
     }
 

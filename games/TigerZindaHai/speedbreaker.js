@@ -10,7 +10,6 @@ class SpeedBreaker {
   }
 
   show() {
-    image(obstacleList[obstacleCounter % obstacleList.length], this.x, this.y, this.r, this.r);
-    obstacleCounter = obstacleCounter + 1;
+    image(currentObstacle, this.x, this.y, this.r, this.r);
   }
 }
