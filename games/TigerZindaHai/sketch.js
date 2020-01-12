@@ -70,7 +70,7 @@ function draw() {
       if (tiger.hits(t)) {
         console.log('game over');
         noLoop();
-        alert("Khel Katam! Tiger Mar Gaya!");
+        alert("Khel Katam! Tiger Mar Gaya! Your score: " + score);
         location.reload();
       }
     }
@@ -85,5 +85,4 @@ function draw() {
 
 function updateScore(){
   score =score + 1;
-  document.getElementById("score").innerHTML= "SCORE: " + score;
 }
