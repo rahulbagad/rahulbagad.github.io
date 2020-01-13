@@ -1,6 +1,6 @@
 class Tiger {
   constructor() {
-    this.r = 250;
+    this.r = 350;
     this.x = 50;
     this.y = height - this.r - 20;
     this.vy = 0;

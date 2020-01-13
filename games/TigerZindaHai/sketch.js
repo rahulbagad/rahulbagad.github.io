@@ -28,7 +28,7 @@ function preload() {
 }
 
 function mousePressed() {
-  obstacles.push(new SpeedBreaker());
+  obstacles.push(new SpeedBreaker(true));
 }
 
 function setup() {

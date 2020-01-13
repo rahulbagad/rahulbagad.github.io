@@ -1,8 +1,11 @@
 class SpeedBreaker {
-  constructor() {
+  constructor(flying) {
     this.r = 200;
     this.x = width;
-    this.y = height - this.r;
+    if(flying)
+      this.y = height - this.r + 100;
+    else
+      this.y = height - this.r;
   }
 
   move() {
