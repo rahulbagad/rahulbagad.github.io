@@ -3,6 +3,7 @@ let tigerImg;
 let obstacleImg1;
 let obstacleImg2;
 let obstacleImg3;
+let obstacleImg4;
 let backgroundImg;
 let obstacles = [];
 let startGame = false
@@ -21,7 +22,8 @@ function preload() {
   backgroundImg = loadImage('road.gif');
   landingImg =  loadImage("home.jpeg");
   obstacleImg3 = loadImage("obstacle3.png");
-  obstacleList.push(obstacleImg1, obstacleImg2, obstacleImg3);
+  obstacleImg4 = loadImage("obstacle4.png");
+  obstacleList.push(obstacleImg1, obstacleImg2, obstacleImg3, obstacleImg4);
   obstacleCounter = 0;
 }
 
@@ -56,9 +58,9 @@ function keyPressed() {
 function draw() {
 
   if(startGame){
-    if (random(1) < 0.003) {
+    if (random(1) < 0.002) {
       updateScore();
-      currentObstacle = obstacleList[obstacleCounter % obstacleList.length]
+      currentObstacle = obstacleList[Math.floor(Math.random() * obstacleList.length)]
       obstacleCounter = obstacleCounter + 1;
       obstacles.push(new SpeedBreaker());
     }
