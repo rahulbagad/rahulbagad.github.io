@@ -22,7 +22,7 @@ function preload() {
   backgroundImg = loadImage('road.gif');
   landingImg =  loadImage("home.jpeg");
   obstacleImg3 = loadImage("obstacle3.png");
-  obstacleImg4 = loadImage("obstacle4.png");
+  obstacleImg4 = loadImage("obstacle4.jpeg");
   obstacleList.push(obstacleImg1, obstacleImg2, obstacleImg3, obstacleImg4);
   obstacleCounter = 0;
 }
