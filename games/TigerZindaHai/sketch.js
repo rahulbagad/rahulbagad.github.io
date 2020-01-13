@@ -22,7 +22,7 @@ function preload() {
   backgroundImg = loadImage('road.gif');
   landingImg =  loadImage("home.jpeg");
   obstacleImg3 = loadImage("obstacle3.png");
-  obstacleImg4 = loadImage("obstacle4.jpeg");
+  obstacleImg4 = loadImage("obstacle4.png");
   obstacleList.push(obstacleImg1, obstacleImg2, obstacleImg3, obstacleImg4);
   obstacleCounter = 0;
 }
@@ -58,7 +58,7 @@ function keyPressed() {
 function draw() {
 
   if(startGame){
-    if (random(1) < 0.002) {
+    if (random(1) < 0.008) {
       updateScore();
       currentObstacle = obstacleList[Math.floor(Math.random() * obstacleList.length)]
       obstacleCounter = obstacleCounter + 1;
