@@ -1,5 +1,5 @@
-let tiger;
-let tigerImg;
+let bhange;
+let bhangeImg;
 let obstacleImg1;
 let obstacleImg2;
 let obstacleImg3;
@@ -16,7 +16,7 @@ function preload() {
   const options = {
     probabilityThreshold: 0.95
   };
-  tigerImg = loadImage('tiger.png');
+  bhangeImg = loadImage('bhange.png');
   obstacleImg1 = loadImage('obstacle1.gif');
   obstacleImg2 = loadImage('obstacle2.png');
   backgroundImg = loadImage('road.gif');
@@ -33,7 +33,7 @@ function mousePressed() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  tiger = new Tiger();
+  bhange = new Bhange();
 }
 
 function gotCommand(error, results) {
@@ -41,7 +41,7 @@ function gotCommand(error, results) {
     console.error(error);
   }
   if (results[0].label == 'up') {
-    tiger.jump();
+    bhange.jump();
   }
 }
 
@@ -50,7 +50,7 @@ function keyPressed() {
     startGame = true;
   else{
     if (key == ' ') {
-        tiger.jump();
+        bhange.jump();
       }
   }
 }
@@ -69,7 +69,7 @@ function draw() {
     for (let t of obstacles) {
       t.move();
       t.show();
-      if (tiger.hits(t)) {
+      if (bhange.hits(t)) {
         console.log('game over');
         noLoop();
         alert("Khel Katam! Tiger Mar Gaya! Your score: " + score);
@@ -77,8 +77,8 @@ function draw() {
       }
     }
 
-    tiger.show();
-    tiger.move();
+    bhange.show();
+    bhange.move();
   }
   else{
     background(landingImg);

@@ -1,4 +1,4 @@
-class Tiger {
+class Bhange {
   constructor() {
     this.r = 350;
     this.x = 50;
@@ -9,7 +9,7 @@ class Tiger {
 
   jump() {
     if (this.y == height - this.r) {
-      this.vy = -60;
+      this.vy = -70;
     }
   }
 
@@ -28,6 +28,6 @@ class Tiger {
   }
 
   show() {
-    image(tigerImg, this.x, this.y, this.r, this.r);
+    image(bhangeImg, this.x, this.y, this.r, this.r);
   }
 }
