@@ -70,9 +70,8 @@ function draw() {
       t.move();
       t.show();
       if (bhange.hits(t)) {
-        console.log('game over');
         noLoop();
-        alert("Khel Katam! Tiger Mar Gaya! Your score: " + score);
+        alert("Khel Katam! Bhange Mar Gaya! Your score: " + score);
         location.reload();
       }
     }
